@@ -1,0 +1,325 @@
+body {
+	background: #cccccc;
+}
+
+#align {
+	display: flex;
+  align-items: center;
+  justify-content: center;	
+  height: 100vh;
+}
+
+#stage {
+	width: 900px;
+	height: 556px;
+	margin: auto;
+	background: white;
+	position: relative;
+	z-index: -2;
+}
+
+
+#square {
+	width: 800px;
+	height: 40px;
+	background: sandybrown;
+	top: 350px;
+	left: 60px;
+	position: absolute;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+
+#square_one {
+	width: 816px;
+    height: 30px;
+    background: grey;
+    top: 362px;
+    left: 52px;
+    position: absolute;
+}
+
+#square_two {
+	width: 736px;
+    height: 12px;
+    background: grey;
+    top: 433px;
+    left: 92px;
+    position: absolute;
+}
+
+#square_leg1 {
+	width: 36px;
+    height: 164px;
+    background: dimgrey;
+    top: 392px;
+    left: 61px;
+    position: absolute;
+}
+
+#square_leg2 {
+	width: 36px;
+    height: 164px;
+    background: dimgrey;
+    top: 392px;
+    left: 824px;
+    position: absolute;
+}
+
+
+#square_book {
+	width: 530px;
+    height: 30px;
+    background: bisque;
+    top: 320px;
+    left: 180px;
+    position: absolute;
+    /* animation: spin 2s infinite;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+
+#square_book_one {
+	width: 214px;
+    height: 20px;
+    background: ghostwhite;
+    top: 325px;
+    left: 180px;
+    position: absolute;
+  }
+
+
+ .book-text {
+    font-size: 15px;
+    color: saddlebrown;
+    font-weight: 600;
+    top: 314px;
+    left: 427px;
+    position: absolute;
+        }
+
+#circle_left {
+	width: 75px;
+  height: 47px;
+  background: tomato;
+  border-radius: 47px;
+  top: 303px;
+  left: 217px;
+  position: absolute;
+}
+
+#circle_right {
+	width: 78px;
+  height: 50px;
+  background: tomato;
+  border-radius: 50px;
+  top: 300px;
+  left: 288px;
+  position: absolute;
+  z-index: 2;
+}
+
+
+#circle {
+	width: 150px;
+  height: 150px;
+  background: lightpink;
+  border-radius: 150px;
+  top: 200px;
+  left: 220px;
+  position: absolute;
+  z-index: 1;
+}
+
+
+#hand_right {
+	width: 55px;
+    height: 50px;
+    background: pink;
+    border-radius: 50px;
+    top: 260px;
+    left: 323px;
+    position: absolute;
+    z-index: 3;
+}
+
+#eye_right {
+	width: 15px;
+    height: 38px;
+    background: purple;
+    border-radius: 50px;
+    top: 238px;
+    left: 264px;
+    position: absolute;
+    z-index: 3;
+    transform: rotate(14deg);
+}
+
+#eye_left {
+	width: 15px;
+    height: 38px;
+    background: purple;
+    border-radius: 50px;
+    top: 238px;
+    left: 238px;
+    position: absolute;
+    z-index: 3;
+    transform: rotate(14deg);
+}
+
+#eye_left_white {
+	width: 10px;
+    height: 19px;
+    background: white;
+    border-radius: 50px;
+    top: 240px;
+    left: 242px;
+    position: absolute;
+    z-index: 3;
+    transform: rotate(14deg);
+}
+
+#eye_right_white {
+	width: 10px;
+    height: 19px;
+    background: white;
+    border-radius: 50px;
+    top: 240px;
+    left: 268px;
+    position: absolute;
+    z-index: 3;
+    transform: rotate(14deg);
+}
+
+#cake {
+	width: 184px;
+    height: 127px;
+    background: beige;
+    top: 223px;
+    left: 483px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 15px;
+}
+
+#cake0 {
+	width: 27px;
+    height: 11px;
+    background: purple;
+    top: 212px;
+    left: 513px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 7px;
+}
+
+#cake00 {
+	width: 37px;
+    height: 19px;
+    background: lightgrey;
+    top: 204px;
+    left: 536px;
+    position: absolute;
+    z-index: -1;
+}
+
+#cake1 {
+	width: 160px;
+    height: 14px;
+    background: purple;
+    top: 245px;
+    left: 507px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+#cake2 {
+	width: 160px;
+    height: 14px;
+    background: tomato;
+    top: 276px;
+    left: 507px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+#cake3 {
+	width: 160px;
+    height: 14px;
+    background: lightpink;
+    top: 306px;
+    left: 507px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.cake-text {
+    font-size: 11px;
+    color: purple;
+    font-weight: 900;
+    top: 197px;
+    left: 541px;
+    position: absolute;
+        }
+
+#heart_right {
+	width: 15px;
+    height: 28px;
+    background: hotpink;
+    border-radius: 50px 50px 0px 0px;
+    top: 175px;
+    left: 201px;
+    position: absolute;
+    z-index: 3;
+    transform: rotate(30deg);
+}
+
+#heart_left {
+	width: 15px;
+    height: 19px;
+    background: hotpink;
+    border-radius: 50px 50px 0px 0px;
+    top: 180px;
+    left: 189px;
+    position: absolute;
+    z-index: 3;
+    transform: rotate(-60deg);
+}
+
+
+
+
+/* animations */
+
+/*
+#clip:hover {
+	transform: rotate(1200deg);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes move {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+
+*/
