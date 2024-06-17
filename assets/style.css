@@ -19,7 +19,7 @@ body {
 p, li {
 	font-size:  22px;
 	line-height: 30px;
-	color: saddlebrown;
+	color: darkseagreen;
 }
 
 /* adjusting spacing */
@@ -42,15 +42,13 @@ img {
 }
 
 .cursive {
-    font-family: cursive;
+        font-family: 'Montserrat', sans-serif;
     color: darkgreen;
     font-size: 60px;
-    font-style: italic;
 }
 
 .desc {
-	font-family: monospace;
-	color: orange;
+	color: lightgray;
 	font-style: italic;
 }
 /* uncomment the code below to set the grid */
