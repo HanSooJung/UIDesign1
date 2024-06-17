@@ -7,8 +7,13 @@
 /* adjusting fonts */
 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
+	font-family: 'Avara Black', -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
 	transition: background 500ms ease;
+}
+
+@font-face {
+  font-family: "Avara Black";
+  src: url("/Users/hansujeong/Desktop/UIDesign1/codingfromlife/assets/Avara-Black.ttf");
 }
 
 p, li {

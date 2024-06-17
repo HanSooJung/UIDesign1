@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrapbook maker</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+            gap: 100px;
+        }
+        .hidden {
+            display: none;
+        }
+        .container0 {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            width: 75%;
+
+        }
+        .attach_left {
+            position: relative;
+            
+        }
+
+        .attach_right {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin-top: 20px;
+            line-height: 1.7;
+            
+        }
+        .container {
+            position: relative;
+            width: 552px; /* Adjust as necessary */
+            height: 982px; /* Adjust as necessary */
+            margin-top: 20px;
+        }
+        .shape11 {
+            width: 235px;
+            height: 337px;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+        }
+        .shape22 {
+            width: 446px;
+            height: 255px;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+        }
+        .shape33 {
+            width: 349px;
+            height: 241px;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+        }
+        .shape44 {
+            width: 384px;
+            height: 448px;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+        }
+        .shape55 {
+            width: 477px;
+            height: 419px;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+        }
+        .shape66 {
+            width: 552px;
+            height: 568px;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+        }
+        
+         .shape1 { clip-path: polygon(
+    100.00% 21.85%, 
+    -0.43% 0.00%, 
+    -0.32% 92.92%, 
+    21.95% 97.95%, 
+    60.05% 100.00%, 
+    83.69% 66.78%); }
+        .shape2 { clip-path: polygon(
+    -0.22% 100.00%, 
+    -0.22% 10.31%, 
+    11.06% 17.32%, 
+    31.41% 20.31%, 
+    37.04% 0.00%, 
+    58.68% 29.20%, 
+    61.79% 46.55%, 
+    100.00% 100.00%); }
+        .shape3 { clip-path: polygon(
+    76.50% 19.08%, 
+    100.00% 0.00%, 
+    99.94% 100.00%, 
+    91.69% 97.30%, 
+    70.99% 83.86%, 
+    67.62% 78.84%, 
+    53.58% 72.99%, 
+    50.43% 73.44%, 
+    43.27% 69.29%, 
+    53.58% 67.63%, 
+    67.62% 67.14%, 
+    64.19% 64.32%, 
+    57.31% 62.66%, 
+    45.31% 56.85%, 
+    36.56% 56.02%, 
+    27.39% 52.70%, 
+    15.18% 44.47%, 
+    12.99% 41.67%, 
+    0.00% 36.50%, 
+    2.34% 34.28%, 
+    34.27% 26.55%, 
+    59.17% 26.93%, 
+    76.50% 19.08%); }
+        .shape4 { clip-path: polygon(
+    100.00% 100.00%, 
+    100.00% 66.45%, 
+    92.33% 64.86%, 
+    73.54% 57.61%, 
+    70.34% 54.88%, 
+    57.70% 51.88%, 
+    54.77% 52.09%, 
+    48.22% 49.91%, 
+    58.34% 48.94%, 
+    70.34% 48.67%, 
+    67.27% 46.99%, 
+    60.90% 46.28%, 
+    50.16% 42.98%, 
+    42.21% 42.63%, 
+    33.88% 40.85%, 
+    22.73% 36.40%, 
+    20.70% 34.92%, 
+    8.83% 32.15%, 
+    11.21% 31.10%, 
+    40.40% 26.92%, 
+    63.00% 26.92%, 
+    78.20% 22.77%, 
+    100.00% 12.52%, 
+    92.80% 3.82%, 
+    75.05% 3.37%, 
+    56.08% 7.77%, 
+    28.65% 4.73%, 
+    16.05% 0.00%, 
+    7.77% 28.54%, 
+    0.00% 43.17%, 
+    24.36% 59.34%, 
+    28.17% 69.38%, 
+    72.67% 100.00%, 
+    100.00% 100.00%); }
+        .shape5 { clip-path: polygon(
+    15.91% 20.50%, 
+    18.47% -0.12%, 
+    100.00% -0.24%, 
+    100.00% 53.68%, 
+    94.09% 54.45%, 
+    77.30% 66.49%, 
+    64.63% 79.90%, 
+    50.63% 82.79%, 
+    25.10% 92.35%, 
+    14.83% 94.53%, 
+    7.97% 98.64%, 
+    0.00% 100.00%, 
+    30.17% 65.39%, 
+    34.74% 58.47%, 
+    57.12% 32.83%, 
+    18.30% 46.49%, 
+    15.91% 20.50%); }
+        .shape6 { clip-path: polygon(
+    -0.18% 77.17%, 
+    -0.18% -0.18%, 
+    29.40% -0.09%, 
+    27.16% 15.12%, 
+    29.40% 34.18%, 
+    63.06% 24.25%, 
+    43.74% 43.00%, 
+    39.56% 48.05%, 
+    13.40% 73.51%, 
+    20.33% 72.51%, 
+    26.05% 69.64%, 
+    35.21% 68.05%, 
+    57.43% 61.01%, 
+    69.33% 59.02%, 
+    80.04% 49.11%, 
+    94.92% 40.09%, 
+    100.00% 39.56%, 
+    100.00% 98.06%, 
+    95.24% 97.08%, 
+    82.95% 96.61%, 
+    69.51% 100.00%, 
+    50.27% 97.62%, 
+    41.42% 93.85%, 
+    42.47% 89.78%, 
+    -0.18% 77.17%); }
+
+        /* Adjust positions as necessary */
+        #output1 { top: 439px; left: 0; }
+        #output2 { top: 725px; left: 0; }
+        #output3 { top: 589px; left: 202px; }
+        #output4 { top: 533px; left: 167px; }
+        #output5 { top: 0; left: 74px; }
+        #output6 { top: 0; left: 0; }
+        
+        #dynamicImage {
+            width: 416px; /* Adjust as necessary */
+            height: 740px; /* Adjust as necessary */
+
+        }
+        #dynamicFrame { 
+            width: 552px; /* Adjust as necessary */
+            height: 982px; /* Adjust as necessary */
+            position: absolute;
+            top: 0; 
+            left: 0;
+            z-index: 1;
+        }        
+        
+        #confirmButton {
+            background-color: black;
+            font-size: 16px;
+            color: white;
+            padding: 10px 0px;
+            border: none;
+            border-radius: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container0">
+    <div class="attach_left">
+    <img id="dynamicImage" src="/Users/hansujeong/Desktop/UIDesign1/scrapPieces/dynamicImage.png" alt="dynamicImage" />
+
+    </div>
+    <div class="attach_right">
+    <div>
+        Photo 1<br>
+        <input type="file" id="fileInput1">
+        <br>
+        <label><input type="checkbox" id="grayscaleCheckbox1"> Grayscale</label>
+        <label><input type="checkbox" id="blurCheckbox1"> Blur</label>
+        <label><input type="checkbox" id="invertCheckbox1"> Invert</label>
+    </div>
+    <br>
+    <div>
+        Photo 2<br>
+        <input type="file" id="fileInput2">
+        <br>
+        <label><input type="checkbox" id="grayscaleCheckbox2"> Grayscale</label>
+        <label><input type="checkbox" id="blurCheckbox2"> Blur</label>
+        <label><input type="checkbox" id="invertCheckbox2"> Invert</label>
+    </div>
+     <br>
+    <div>
+        Photo 3<br>
+        <input type="file" id="fileInput3">
+        <br>
+        <label><input type="checkbox" id="grayscaleCheckbox3"> Grayscale</label>
+        <label><input type="checkbox" id="blurCheckbox3"> Blur</label>
+        <label><input type="checkbox" id="invertCheckbox3"> Invert</label>
+    </div>
+     <br>
+    <div>
+        Photo 4<br>
+        <input type="file" id="fileInput4">
+        <br>
+        <label><input type="checkbox" id="grayscaleCheckbox4"> Grayscale</label>
+        <label><input type="checkbox" id="blurCheckbox4"> Blur</label>
+        <label><input type="checkbox" id="invertCheckbox4"> Invert</label>
+    </div>
+     <br>
+    <div>
+        Photo 5<br>
+        <input type="file" id="fileInput5">
+        <br>
+        <label><input type="checkbox" id="grayscaleCheckbox5"> Grayscale</label>
+        <label><input type="checkbox" id="blurCheckbox5"> Blur</label>
+        <label><input type="checkbox" id="invertCheckbox5"> Invert</label>
+    </div>
+     <br>
+    <div>
+        Photo 6<br>
+        <input type="file" id="fileInput6">
+        <br>
+        <label><input type="checkbox" id="grayscaleCheckbox6"> Grayscale</label>
+        <label><input type="checkbox" id="blurCheckbox6"> Blur</label>
+        <label><input type="checkbox" id="invertCheckbox6"> Invert</label>
+    </div>
+    <br>
+    <br>
+    <button id="confirmButton">Submit</button>
+    </div>
+    </div>
+    <br>
+    <div class="container">
+        <img id="dynamicFrame" src="/Users/hansujeong/Desktop/UIDesign1/scrapPieces/dynamicFrame.png" alt="dynamicFrame" />
+
+        <div id="output1" class="shape11 shape1 hidden"></div>
+        <div id="output2" class="shape22 shape2 hidden"></div>
+        <div id="output3" class="shape33 shape3 hidden"></div>
+        <div id="output4" class="shape44 shape4 hidden"></div>
+        <div id="output5" class="shape55 shape5 hidden"></div>
+        <div id="output6" class="shape66 shape6 hidden"></div>
+    </div>
+    <script>
+        const fileInputs = [
+            { file: document.getElementById('fileInput1'), grayscale: document.getElementById('grayscaleCheckbox1'), blur: document.getElementById('blurCheckbox1'), invert: document.getElementById('invertCheckbox1'), output: document.getElementById('output1') },
+            { file: document.getElementById('fileInput2'), grayscale: document.getElementById('grayscaleCheckbox2'), blur: document.getElementById('blurCheckbox2'), invert: document.getElementById('invertCheckbox2'), output: document.getElementById('output2') },
+            { file: document.getElementById('fileInput3'), grayscale: document.getElementById('grayscaleCheckbox3'), blur: document.getElementById('blurCheckbox3'), invert: document.getElementById('invertCheckbox3'), output: document.getElementById('output3') },
+            { file: document.getElementById('fileInput4'), grayscale: document.getElementById('grayscaleCheckbox4'), blur: document.getElementById('blurCheckbox4'), invert: document.getElementById('invertCheckbox4'), output: document.getElementById('output4') },
+            { file: document.getElementById('fileInput5'), grayscale: document.getElementById('grayscaleCheckbox5'), blur: document.getElementById('blurCheckbox5'), invert: document.getElementById('invertCheckbox5'), output: document.getElementById('output5') },
+            { file: document.getElementById('fileInput6'), grayscale: document.getElementById('grayscaleCheckbox6'), blur: document.getElementById('blurCheckbox6'), invert: document.getElementById('invertCheckbox6'), output: document.getElementById('output6') }
+        ];
+
+        function applyFilters(checkboxes) {
+            let filter = '';
+            if (checkboxes.grayscale.checked) filter += 'grayscale(100%) ';
+            if (checkboxes.blur.checked) filter += 'blur(5px) ';
+            if (checkboxes.invert.checked) filter += 'invert(100%) ';
+            return filter.trim();
+        }
+
+        function handleFileInput(fileInput, outputElement, checkboxes) {
+            if (fileInput.files && fileInput.files[0]) {
+                const file = fileInput.files[0];
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    const imageSrc = e.target.result;
+                    outputElement.style.backgroundImage = `url(${imageSrc})`;
+                    outputElement.style.filter = applyFilters(checkboxes);
+                    outputElement.classList.remove('hidden');
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+
+        document.getElementById('confirmButton').addEventListener('click', () => {
+            fileInputs.forEach(input => {
+                handleFileInput(input.file, input.output, { grayscale: input.grayscale, blur: input.blur, invert: input.invert });
+            });
+            scrollToBottom();
+        });
+        
+        function scrollToBottom() {
+            window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: 'smooth' // 부드러운 스크롤 효과를 위해 추가
+            });
+        }
+    </script>
+</body>
+</html>
