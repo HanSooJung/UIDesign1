@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Steps Scrapbook_simple</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <style>
+    
+    @media (max-width: 1300px) {
+    .hide-on-small-screen {
+        display: none;
+    }
+}
+    
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+            gap: 80px;
+                    }
+        .hidden {
+            display: none;
+        }
+        .container0 {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            width: 75%;
+
+        }
+        .attach_left {
+            position: relative;
+            
+        }
+
+        .attach_right {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin-top: 20px;
+            line-height: 1.7;
+            
+        }
+        .container {
+            display: none;
+            position: relative;
+            width: 552px; /* Adjust as necessary */
+            height: 982px; /* Adjust as necessary */
+            margin-top: 5px;
+        }
+        
+        .shape11 {
+            width: 294px;
+            height: 288px;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+        }
+        .shape22 {
+            width: 552px;
+            height: 309px;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+        }
+        .shape33 {
+            width: 240px;
+            height: 208px;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+        }
+        .shape44 {
+            width: 552px;
+            height: 854px;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+        }
+        .shape55 {
+            width: 313px;
+            height: 249px;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+        }
+        .shape66 {
+            width: 552px;
+            height: 982px;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+        }
+        
+         .shape1 { clip-path: polygon(
+    30.89% 0.00%, 
+    2.09% 9.15%, 
+    0.00% 38.22%, 
+    0.00% 66.51%, 
+    7.05% 91.80%, 
+    80.58% 100.00%, 
+    100.00% 88.54%, 
+    95.03% 48.35%, 
+    95.99% 5.51%, 
+    93.28% 2.49%, 
+    34.22% 2.49%, 
+    30.89% 0.00%
+  );
+}
+        .shape2 { clip-path: polygon(
+    12.78% 18.64%, 
+    0.05% 12.79%, 
+    0.00% 100.00%, 
+    6.89% 95.39%, 
+    7.91% 67.66%, 
+    23.23% 59.08%, 
+    24.85% 61.52%, 
+    56.50% 61.52%, 
+    57.85% 64.45%, 
+    57.67% 78.46%, 
+    64.89% 76.07%, 
+    72.39% 75.50%, 
+    83.23% 70.64%, 
+    96.39% 51.00%, 
+    100.00% 42.82%, 
+    100.00% 11.30%, 
+    98.84% 12.38%, 
+    78.86% 7.34%, 
+    77.03% 8.41%, 
+    64.70% 5.53%, 
+    62.22% 2.31%, 
+    53.17% 0.00%, 
+    46.63% 6.68%, 
+    43.87% 6.68%, 
+    32.61% 13.94%, 
+    12.78% 18.64%
+  );
+}
+        .shape3 { clip-path: polygon(
+    91.69% 12.04%, 
+    100.00% 0.00%, 
+    99.79% 100.00%, 
+    75.40% 92.51%, 
+    51.44% 90.54%, 
+    34.29% 96.06%, 
+    2.02% 90.05%, 
+    0.00% 53.79%, 
+    18.32% 49.63%, 
+    35.46% 48.76%, 
+    61.02% 41.52%, 
+    91.69% 12.04%
+  );
+}
+        .shape4 { clip-path: polygon(
+    0.00% 5.77%, 
+    2.82% 4.60%, 
+    3.84% 4.60%, 
+    12.92% 1.58%, 
+    35.13% 0.00%, 
+    36.70% 0.60%, 
+    43.20% 0.30%, 
+    45.10% 1.64%, 
+    46.85% 2.24%, 
+    50.70% 4.90%, 
+    61.38% 9.84%, 
+    64.21% 10.50%, 
+    71.62% 14.50%, 
+    72.31% 15.70%, 
+    75.64% 17.46%, 
+    82.11% 22.00%, 
+    93.02% 27.15%, 
+    100.00% 28.67%, 
+    100.00% 39.56%, 
+    98.89% 39.97%, 
+    78.78% 38.15%, 
+    76.93% 38.55%, 
+    64.69% 37.44%, 
+    62.07% 36.29%, 
+    52.91% 35.49%, 
+    46.57% 37.94%, 
+    43.84% 37.94%, 
+    32.63% 40.55%, 
+    12.69% 42.25%, 
+    0.00% 40.13%, 
+    0.00% 71.71%, 
+    6.81% 70.06%, 
+    6.58% 79.34%, 
+    10.51% 87.94%, 
+    49.54% 90.58%, 
+    59.96% 86.56%, 
+    57.64% 72.84%, 
+    71.44% 74.41%, 
+    79.17% 73.04%, 
+    89.46% 73.55%, 
+    100.00% 75.31%, 
+    100.00% 94.20%, 
+    87.22% 97.82%, 
+    45.56% 100.00%, 
+    38.70% 97.58%, 
+    15.37% 98.00%, 
+    0.00% 99.60%
+  );
+}
+        .shape5 { clip-path: polygon(
+    3.42% 7.28%, 
+    0.00% 2.67%, 
+    23.31% 0.00%, 
+    34.07% 9.23%, 
+    67.90% 4.62%, 
+    71.96% 7.08%, 
+    100.00% 2.97%, 
+    100.00% 100.00%, 
+    87.71% 94.73%, 
+    68.54% 76.94%, 
+    57.06% 61.45%, 
+    51.35% 55.50%, 
+    50.06% 51.40%, 
+    37.17% 37.64%, 
+    32.20% 35.40%, 
+    25.83% 29.34%, 
+    13.04% 18.26%, 
+    6.44% 9.23%, 
+    3.42% 7.28%
+  );
+}
+        .shape6 { clip-path: polygon(
+    2.82% 10.65%, 
+    0.00% 11.67%, 
+    0.00% 93.38%, 
+    15.74% 91.91%, 
+    38.70% 91.54%, 
+    45.60% 93.73%, 
+    87.31% 91.77%, 
+    100.00% 88.61%, 
+    100.00% 100.00%, 
+    0.00% 100.00%, 
+    0.00% 93.38%, 
+    0.00% 11.67%, 
+    0.00% 0.00%, 
+    100.00% 0.00%, 
+    100.00% 7.00%, 
+    84.10% 8.02%, 
+    81.75% 7.37%, 
+    62.55% 8.60%, 
+    56.47% 6.20%, 
+    36.80% 7.19%, 
+    35.04% 6.54%, 
+    14.86% 7.42%, 
+    3.84% 10.65%
+  );
+}
+
+        /* Adjust positions as necessary */
+        #output1 { top: 552px; left: 37px; }
+        #output2 { top: 369px; left: 0; }
+        #output3 { top: 501px; left: 312px; }
+        #output4 { top: 66px; left: 0; }
+        #output5 { top: 61px; left: 239px; }
+        #output6 { top: 0; left: 0; }
+
+                
+        #simpleImage {
+            width: 416px; /* Adjust as necessary */
+            height: 740px; /* Adjust as necessary */
+
+        }
+        #simpleFrame { 
+            width: 552px; /* Adjust as necessary */
+            height: 982px; /* Adjust as necessary */
+            position: absolute;
+            top: 0; 
+            left: 0;
+            z-index: 1;
+        }        
+        
+        #confirmButton {
+            background-color: black;
+            font-size: 16px;
+            color: white;
+            padding: 10px 0px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        
+        .step2-1 {
+            position: absolute;
+            top: 280px;
+            z-index: -1;
+            width: 1440px
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <img src="scrapSteps/page222.png" alt="Step2">
+    <img class="step2-1 hide-on-small-screen" src="scrapSteps/page222-1.png" alt="Step2-1">
+    <div class="container0">
+    <div class="attach_left">
+    <img id="simpleImage" src="/Users/hansujeong/Desktop/UIDesign1/scrapPieces/simpleImage.png" alt="simpleImage" />
+
+    </div>
+    <div class="attach_right">
+    <div>
+        Photo 1<br>
+        <input type="file" id="fileInput1">
+        <br>
+        <label><input type="checkbox" id="grayscaleCheckbox1"> Grayscale</label>
+        <label><input type="checkbox" id="blurCheckbox1"> Blur</label>
+        <label><input type="checkbox" id="invertCheckbox1"> Invert</label>
+    </div>
+    <br>
+    <div>
+        Photo 2<br>
+        <input type="file" id="fileInput2">
+        <br>
+        <label><input type="checkbox" id="grayscaleCheckbox2"> Grayscale</label>
+        <label><input type="checkbox" id="blurCheckbox2"> Blur</label>
+        <label><input type="checkbox" id="invertCheckbox2"> Invert</label>
+    </div>
+     <br>
+    <div>
+        Photo 3<br>
+        <input type="file" id="fileInput3">
+        <br>
+        <label><input type="checkbox" id="grayscaleCheckbox3"> Grayscale</label>
+        <label><input type="checkbox" id="blurCheckbox3"> Blur</label>
+        <label><input type="checkbox" id="invertCheckbox3"> Invert</label>
+    </div>
+     <br>
+    <div>
+        Photo 4<br>
+        <input type="file" id="fileInput4">
+        <br>
+        <label><input type="checkbox" id="grayscaleCheckbox4"> Grayscale</label>
+        <label><input type="checkbox" id="blurCheckbox4"> Blur</label>
+        <label><input type="checkbox" id="invertCheckbox4"> Invert</label>
+    </div>
+     <br>
+    <div>
+        Photo 5<br>
+        <input type="file" id="fileInput5">
+        <br>
+        <label><input type="checkbox" id="grayscaleCheckbox5"> Grayscale</label>
+        <label><input type="checkbox" id="blurCheckbox5"> Blur</label>
+        <label><input type="checkbox" id="invertCheckbox5"> Invert</label>
+    </div>
+     <br>
+    <div>
+        Photo 6<br>
+        <input type="file" id="fileInput6">
+        <br>
+        <label><input type="checkbox" id="grayscaleCheckbox6"> Grayscale</label>
+        <label><input type="checkbox" id="blurCheckbox6"> Blur</label>
+        <label><input type="checkbox" id="invertCheckbox6"> Invert</label>
+    </div>
+    <br>
+    <br>
+    <button id="confirmButton">Submit</button>
+    </div>
+    </div>
+    
+    <img src="scrapSteps/page333.png" alt="Step3">
+    <div class="container">
+        <img id="simpleFrame" src="/Users/hansujeong/Desktop/UIDesign1/scrapPieces/simpleFrame.png" alt="simpleFrame" />
+
+        <div id="output1" class="shape11 shape1 hidden"></div>
+        <div id="output2" class="shape22 shape2 hidden"></div>
+        <div id="output3" class="shape33 shape3 hidden"></div>
+        <div id="output4" class="shape44 shape4 hidden"></div>
+        <div id="output5" class="shape55 shape5 hidden"></div>
+        <div id="output6" class="shape66 shape6 hidden"></div>
+    </div>
+    <img width="100%" src="scrapSteps/endImage.png" alt="end">
+    <script>
+    document.getElementById("confirmButton").addEventListener("click", function() {
+        const fileInputs = [
+            { file: document.getElementById('fileInput1'), grayscale: document.getElementById('grayscaleCheckbox1'), blur: document.getElementById('blurCheckbox1'), invert: document.getElementById('invertCheckbox1'), output: document.getElementById('output1') },
+            { file: document.getElementById('fileInput2'), grayscale: document.getElementById('grayscaleCheckbox2'), blur: document.getElementById('blurCheckbox2'), invert: document.getElementById('invertCheckbox2'), output: document.getElementById('output2') },
+            { file: document.getElementById('fileInput3'), grayscale: document.getElementById('grayscaleCheckbox3'), blur: document.getElementById('blurCheckbox3'), invert: document.getElementById('invertCheckbox3'), output: document.getElementById('output3') },
+            { file: document.getElementById('fileInput4'), grayscale: document.getElementById('grayscaleCheckbox4'), blur: document.getElementById('blurCheckbox4'), invert: document.getElementById('invertCheckbox4'), output: document.getElementById('output4') },
+            { file: document.getElementById('fileInput5'), grayscale: document.getElementById('grayscaleCheckbox5'), blur: document.getElementById('blurCheckbox5'), invert: document.getElementById('invertCheckbox5'), output: document.getElementById('output5') },
+            { file: document.getElementById('fileInput6'), grayscale: document.getElementById('grayscaleCheckbox6'), blur: document.getElementById('blurCheckbox6'), invert: document.getElementById('invertCheckbox6'), output: document.getElementById('output6') }
+        ];
+
+        fileInputs.forEach(input => {
+            handleFileInput(input.file, input.output, { grayscale: input.grayscale, blur: input.blur, invert: input.invert });
+        });
+
+        var hiddenComponents = document.querySelectorAll(".container");
+        hiddenComponents.forEach(function(component) {
+            component.style.display = "block";
+        });
+
+        scrollToBottom(); // 모든 파일이 처리된 후에 스크롤 다운
+    });
+
+    function applyFilters(checkboxes) {
+        let filter = '';
+        if (checkboxes.grayscale.checked) filter += 'grayscale(100%) ';
+        if (checkboxes.blur.checked) filter += 'blur(5px) ';
+        if (checkboxes.invert.checked) filter += 'invert(100%) ';
+        return filter.trim();
+    }
+
+    function handleFileInput(fileInput, outputElement, checkboxes) {
+        if (fileInput.files && fileInput.files[0]) {
+            const file = fileInput.files[0];
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                const imageSrc = e.target.result;
+                outputElement.style.backgroundImage = `url(${imageSrc})`;
+                outputElement.style.filter = applyFilters(checkboxes);
+                outputElement.classList.remove('hidden');
+                scrollToBottom(); // 이미지가 로드된 후에 스크롤 다운
+            };
+            reader.readAsDataURL(file);
+        }
+    }
+
+    function scrollToBottom() {
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: 'smooth' // 부드러운 스크롤 효과를 위해 추가
+        });
+    }
+</script>
+</body>
+</html>

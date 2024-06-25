@@ -31,18 +31,23 @@
 .change-background-text {
     cursor: pointer;
     color: black;
-    font-size: 15px;
+    font-size: 22px;
     font-weight: 600;
       }    
+      
+      .inline {
+      display: inline;
+    }
   </style>
 </head>
 
 <body>
 
       <br>
-      <h1><span class="cursive">Soojung Han</span></h1>
-      <p class="change-background-text" onclick="changeBackgroundColor()">🌝 DARK MODE 🌚</p>
-      <br>
+      <h1 class="inline"><span class="cursive">Soojung Han </span></h1>
+      <p class="change-background-text inline" onclick="changeBackgroundColor1()">🌝 </p>
+      <p class="change-background-text inline" onclick="changeBackgroundColor2()">🌚</p>
+      <br><br><br>
       <img src="Psyduck.png" alt="Psyduck" width="200">
       <br><br>
       <pre>       Hover over me!</pre>
@@ -66,13 +71,17 @@
       </ul>
 
   <script>
-function changeBackgroundColor() {
-  // Get a reference to the body element
+function changeBackgroundColor2() {
   var body = document.body;
-
-  // Change the background color to black
   body.style.backgroundColor = "#000";
+  body.style.color = "#fff";
 }
+function changeBackgroundColor1() {
+  var body = document.body;
+  body.style.backgroundColor = "#F5DEB3";
+  body.style.color = "#000";
+}
+
 </script>
 
 </body>
